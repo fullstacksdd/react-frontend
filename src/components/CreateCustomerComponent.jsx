@@ -20,8 +20,18 @@ class CreateCustomerComponent extends Component {
             postCode: '',
             county: ''
         }
+        
         this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
         this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
+        this.changeEmailHandler = this.changeEmailHandler.bind(this);
+        this.changeBuildingNameHandler = this.changeBuildingNameHandler.bind(this);
+        this.changeFlatNumberHandler = this.changeFlatNumberHandler.bind(this);
+        this.changeAddressLine1Handler = this.changeAddressLine1Handler.bind(this);
+        this.changeAddressLine2Handler = this.changeAddressLine2Handler.bind(this);
+        this.changeAddressLine3Handler = this.changeAddressLine3Handler.bind(this);
+        this.changeTownHandler = this.changeTownHandler.bind(this);
+        this.changePostCodeHandler = this.changePostCodeHandler.bind(this);
+        this.changeCountyHandler = this.changeCountyHandler.bind(this);
         this.saveOrUpdateCustomer = this.saveOrUpdateCustomer.bind(this);
     }
 
@@ -74,7 +84,6 @@ class CreateCustomerComponent extends Component {
     changeFirstNameHandler= (event) => {
         this.setState({firstName: event.target.value});
     }
-
     changeLastNameHandler= (event) => {
         this.setState({lastName: event.target.value});
     }
@@ -82,7 +91,31 @@ class CreateCustomerComponent extends Component {
     changeEmailHandler= (event) => {
         this.setState({emailId: event.target.value});
     }
-
+    changeBuildingNameHandler= (event) => {
+        this.setState({buildingName: event.target.value});
+    }
+    changeFlatNumberHandler= (event) => {
+        this.setState({flatNumber: event.target.value});
+    }
+    changeAddressLine1Handler= (event) => {
+        this.setState({flatNumber: event.target.value});
+    }
+    changeAddressLine2Handler= (event) => {
+        this.setState({addressLine2: event.target.value});
+    }
+    changeAddressLine3Handler= (event) => {
+        this.setState({addressLine3: event.target.value});
+    }
+    changeTownHandler= (event) => {
+        this.setState({town: event.target.value});
+    }
+    changePostCodeHandler= (event) => {
+        this.setState({postCode: event.target.value});
+    }
+    changeCountyHandler= (event) => {
+        this.setState({county: event.target.value});
+    }
+   
     cancel(){
         this.props.history.push('/customers');
     }
@@ -129,7 +162,7 @@ class CreateCustomerComponent extends Component {
                                         <div className = "form-group">
                                             <label> Flat Number: </label>
                                             <input placeholder="Flat Number" name="flatNumber" className="form-control" 
-                                                value={this.state.flatNumber} onChange={this.changeFlatNameHandler}/>
+                                                value={this.state.flatNumber} onChange={this.changeFlatNumberHandler}/>
                                         </div>
                                         <div className = "form-group">
                                             <label> Address Line1: </label>

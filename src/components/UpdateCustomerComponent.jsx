@@ -13,6 +13,14 @@ class UpdateCustomerComponent extends Component {
         }
         this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
         this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
+        this.changeBuildingNameHandler = this.changeBuildingNameHandler.bind(this);
+        this.changeFlatNameHandler = this.changeFlatNameHandler.bind(this);
+        this.changeAddressLine1Handler = this.changeAddressLine1Handler.bind(this);
+        this.changeAddressLine2Handler = this.changeAddressLine2Handler.bind(this);
+        this.changeAddressLine3Handler = this.changeAddressLine3Handler.bind(this);
+        this.changeTownHandler = this.changeTownHandler.bind(this);
+        this.changePostCodeHandler = this.changePostCodeHandler.bind(this);
+        this.changeCountyHandler = this.changeCountyHandler.bind(this);
         this.updateCustomer = this.updateCustomer.bind(this);
     }
 
@@ -46,6 +54,27 @@ class UpdateCustomerComponent extends Component {
 
     changeEmailHandler= (event) => {
         this.setState({emailId: event.target.value});
+    }
+    changeBuildingNameHandler= (event) => {
+        this.setState({buildingName: event.target.value});
+    }
+    changeAddressLine1Handler= (event) => {
+        this.setState({flatNumber: event.target.value});
+    }
+    changeAddressLine2Handler= (event) => {
+        this.setState({addressLine2: event.target.value});
+    }
+    changeAddressLine3Handler= (event) => {
+        this.setState({addressLine3: event.target.value});
+    }
+    changeTownHandler= (event) => {
+        this.setState({town: event.target.value});
+    }
+    changePostCodeHandler= (event) => {
+        this.setState({postCode: event.target.value});
+    }
+    changeCountyHandler= (event) => {
+        this.setState({county: event.target.value});
     }
 
     cancel(){
