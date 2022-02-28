@@ -26,8 +26,10 @@ GET one row of Customer data
 
 Produces embedded document containing Customer, Products and Address data.
 
-Postman - POST data
--------------------
+Postman
+-------
+POST data
+
 {
     "firstName": "David",
     "lastName": "Windsor",
@@ -109,5 +111,3 @@ Postman - POST data
         "county": "Buckinghamshire"
     }
 }
-
-# react-frontend
