@@ -98,7 +98,7 @@ class CreateCustomerComponent extends Component {
         this.setState({flatNumber: event.target.value});
     }
     changeAddressLine1Handler= (event) => {
-        this.setState({flatNumber: event.target.value});
+        this.setState({addressLine1: event.target.value});
     }
     changeAddressLine2Handler= (event) => {
         this.setState({addressLine2: event.target.value});
