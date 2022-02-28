@@ -14,15 +14,6 @@ See CustomerService component for endpoints
 TODO
 ----
 Jest
-Complete create, update, and view data.
-
-
-Postman
--------
-POST customer data 
-GET all Customer data
-PUT Customer data
-GET one row of Customer data
 
 Produces embedded document containing Customer, Products and Address data.
 
