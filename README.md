@@ -1,3 +1,6 @@
+This React app front end accompany's the Spring Boot /admin-demo project in this repository.
+
+
 npm install
 npm start
 
@@ -23,8 +26,8 @@ GET one row of Customer data
 
 Produces embedded document containing Customer, Products and Address data.
 
-JSON file for Postman
----------------------
+Postman - POST data
+-------------------
 {
     "firstName": "David",
     "lastName": "Windsor",
