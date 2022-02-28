@@ -1,3 +1,6 @@
+This React app front end accompany's the Spring Boot /admin-demo project in this repository.
+
+
 npm install
 npm start
 
@@ -11,20 +14,13 @@ See CustomerService component for endpoints
 TODO
 ----
 Jest
-Complete create, update, and view data.
-
-
-Postman
--------
-POST customer data 
-GET all Customer data
-PUT Customer data
-GET one row of Customer data
 
 Produces embedded document containing Customer, Products and Address data.
 
-JSON file for Postman
----------------------
+Postman
+-------
+POST data
+
 {
     "firstName": "David",
     "lastName": "Windsor",
@@ -106,5 +102,3 @@ JSON file for Postman
         "county": "Buckinghamshire"
     }
 }
-
-# react-frontend
